@@ -14,7 +14,7 @@ class CategoryItem extends Component {
           alt="..."
         />
         <div className="card-body">
-          <button type="submit" class="btn btn-primary mx-auto d-block">
+          <button type="submit" className="btn btn-primary mx-auto d-block">
             {c.name}
           </button>
         </div>

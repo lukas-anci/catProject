@@ -4,7 +4,7 @@ import './App.css';
 import Categories from './components/Categories';
 import Card from './components/Card';
 
-const apiKey = '32eb8fc7-e83e-482e-96b7-1c7c2835dca6';
+const apiKey = '26be2bb2-7860-4c85-937d-13e8c705a202';
 
 class App extends Component {
   state = {
@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div className="App container">
         <Categories catData={this.state.data} />
-        <Card />
+        <Card catData={this.state.data} />
       </div>
     );
   }
