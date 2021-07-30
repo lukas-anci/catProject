@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 import Categories from './components/Categories';
+import Card from './components/Card';
 
 const apiKey = '32eb8fc7-e83e-482e-96b7-1c7c2835dca6';
 
@@ -34,8 +35,9 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="App">
-        <Categories />
+      <div className="App container">
+        <Categories catData={this.state.data} />
+        <Card />
       </div>
     );
   }
